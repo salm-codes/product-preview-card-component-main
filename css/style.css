@@ -99,3 +99,38 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card {
+    max-width: 25rem;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-img {
+    height: 40vh;
+  }
+
+  .product-img img {
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 0 0 10px 10px;
+  }
+}
