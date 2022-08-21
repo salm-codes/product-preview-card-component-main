@@ -17,7 +17,7 @@ p {
 }
 
 .card {
-  max-width: 30rem;
+  max-width: 35rem;
   display: flex;
   justify-content: center;
 }
@@ -33,7 +33,7 @@ p {
 }
 
 .product-info {
-  min-width: 15rem;
+  min-width: 17.5rem;
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ p {
   color: hsl(228, 12%, 48%);
 }
 
-.product-info h2 {
+.product-info h1 {
   font-family: "Fraunces", serif;
 }
 
@@ -75,21 +75,18 @@ p {
 }
 
 .product-info button {
+  min-width: 70%;
   background-color: hsl(158, 36%, 37%);
   padding: 10px;
   border-radius: 10px;
-}
-
-.product-info button img {
-  margin-right: 10px;
-}
-
-.product-info button p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(0, 0%, 100%);
 }
 
+.product-info button img {
+  margin-right: 10px;
+}
 
 .attribution {
   font-size: 11px;
@@ -101,7 +98,7 @@ p {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 440px) {
   body {
     min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
@@ -124,6 +121,7 @@ p {
   .product-img img {
     background-image: url(./images/image-product-mobile.jpg);
     height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
 
